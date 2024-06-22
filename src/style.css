@@ -8,3 +8,6 @@
 .h1-style {
   @apply font-bold text-6xl mb-4;
 }
+.card {
+  @apply flex flex-col overflow-hidden relative rounded-2xl shadow-lg mb-8 bg-white pb-4;
+}
