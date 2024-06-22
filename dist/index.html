@@ -9,10 +9,16 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body class="min-h-screen bg-white">
-    <header class="bg-gray-800 sticky top-0">
+    <header class="bg-gray-800 sticky top-0 z-50">
       <section
         class="p-4 mx-auto flex justify-between items-center max-w-4xl relative"
       >
@@ -127,21 +133,38 @@
     <main>
       <section>
         <div
-          class="text-center bg-[url('https://live.staticflickr.com/4689/25653194748_fe056447c5.jpg')] text-white py-24 px-10"
+          class="grid text-center bg-[url('https://live.staticflickr.com/4689/25653194748_fe056447c5.jpg')] bg-cover bg-top text-white"
         >
-          <h1 class="h1-style">Lorem ipsum dolor sit amet.</h1>
-          <p class="text-lg font-bold">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
-            temporibus.
-          </p>
-          <a
-            class="inline-flex flex-shrink-0 items-center justify-center mt-6 bg-blue-900 py-2 px-8 text-lg rounded md:hover:bg-blue-600 transition-all duration-200 ease-in-out active:scale-95 font-semibold shadow-md active:shadow-sm"
-            href=""
-            >Get Started</a
-          >
+          <div
+            id="overlay"
+            class="col-start-1 row-start-1 bg-gray-700 opacity-40 w-full h-full"
+          ></div>
+          <div class="col-start-1 row-start-1 py-24 px-10 z-10">
+            <h1 class="h1-style font-lobster xsm:text-5xl">
+              Lorem ipsum dolor sit amet.
+            </h1>
+            <p class="text-lg font-bold">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
+              temporibus.
+            </p>
+            <a
+              class="inline-flex flex-shrink-0 items-center justify-center mt-6 bg-blue-900 py-2 px-8 text-lg rounded md:hover:bg-blue-600 transition-all duration-200 ease-in-out active:scale-95 font-semibold shadow-md active:shadow-sm"
+              href=""
+              >Get Started</a
+            >
+          </div>
         </div>
       </section>
+
+      <section
+        id="main-content"
+        class="grid grid-cols-3 max-w-7xl mx-auto mt-6"
+      >
+        <content class="col-span-2 bg-blue-600"> hello</content>
+        <aside class="bg-red-300">Post</aside>
+      </section>
     </main>
+
     <script src="/js/script.js"></script>
   </body>
 </html>
