@@ -191,18 +191,28 @@
             <h3 class="font-lobster text-3xl p-3">
               Jedi and his friends collection
             </h3>
-            <div id="tags" class="mb-2">
-              <a href="">Animals</a>
-              <a href="">Cute</a>
+            <div id="tags" class="my-4">
+              <a href="" class="tag">Animals</a>
+              <a href="" class="tag">Cute</a>
             </div>
-            <div class="flex justify-between">
-              <a href="" class="text-sm font-bold"
-                >Comments<span class="font-normal text-gray-500"> 3</span></a
+            <div class="flex justify-between items-center p-2 px-5">
+              <a href="" class="text-sm font-bold hover:underline"
+                >Comments<span class="font-normal text-gray-500 text-[12px]">
+                  3</span
+                ></a
               >
-              <div class="">
+              <div
+                class="text-sm font-bold flex gap-2 [&>a:not(:last-child):hover]:underline"
+              >
+                <span
+                  ><img
+                    class="h-3 inline-block mb-[3px]"
+                    src="https://img.icons8.com/ios/50/love-circled.png"
+                    alt="love-circled"
+                /></span>
                 <a href="">Like</a>
                 <a href="">Edit</a>
-                <a href="">Delete</a>
+                <a href="" class="hover:text-red-500">Delete</a>
               </div>
             </div>
           </div>
