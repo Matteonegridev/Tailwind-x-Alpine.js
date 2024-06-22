@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-links-style {
+  @apply [&>li>a]:p-3 [&>li>a:hover]:bg-gray-700 [&>li>a]:rounded-md;
+}
+.h1-style {
+  @apply font-bold text-5xl mb-4;
+}
